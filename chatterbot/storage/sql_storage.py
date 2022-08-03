@@ -21,6 +21,7 @@ class SQLStorageAdapter(StorageAdapter):
 
         from sqlalchemy import create_engine
         from sqlalchemy.orm import sessionmaker
+        from sqlalchemy.inspection import inspect
 
         self.database_uri = kwargs.get('database_uri', False)
 
